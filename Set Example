@@ -1,0 +1,38 @@
+import java.util.HashSet;
+import java.util.Set;
+import java.util.TreeSet;
+
+public class SetExample {
+    public static void main(String[] args) {
+
+//HasheSet  stores unique unorder elements
+//HasheSet allows one null element
+        // HashSet example
+
+        Set<String> hashSet = new HashSet<>();
+        hashSet.add("Banana");
+        hashSet.add("Apple");
+        hashSet.add("Orange");
+        hashSet.add("Grapes");
+
+        System.out.println("HashSet:");
+        for (String fruit : hashSet) {
+            System.out.println(fruit);
+        }
+
+
+//TreeSet  stores  Ascending order unique elements
+//TreeSet does not allow any null element
+        // TreeSet example
+        Set<String> treeSet = new TreeSet<>();
+        treeSet.add("Banana");
+        treeSet.add("Apple");
+        treeSet.add("Orange");
+        treeSet.add("Grapes");
+
+        System.out.println("TreeSet:");
+        for (String fruit : treeSet) {
+            System.out.println(fruit);
+        }
+    }
+}
