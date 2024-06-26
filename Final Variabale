@@ -1,0 +1,18 @@
+public class Example {
+    // Final variable (constant)
+    final int MAX_VALUE = 100;
+
+    // Final variable without initialization
+    final int MIN_VALUE;
+
+    // Constructor to initialize final variable
+    public Example(int minValue) {
+        this.MIN_VALUE = minValue;
+    }
+
+    public static void main(String[] args) {
+        Example obj = new Example(10);
+        System.out.println("MAX_VALUE: " + obj.MAX_VALUE);  // Outputs: MAX_VALUE: 100
+        System.out.println("MIN_VALUE: " + obj.MIN_VALUE);  // Outputs: MIN_VALUE: 10
+    }
+}
