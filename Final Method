@@ -1,0 +1,20 @@
+public class Parent {
+    // Final method
+    public final void display() {
+        System.out.println("This is a final method.");
+    }
+}
+
+public class Child extends Parent {
+    // Attempt to override final method will result in a compile-time error
+    // public void display() {
+    //     System.out.println("Attempting to override.");
+    // }
+}
+
+public class TestFinalMethod {
+    public static void main(String[] args) {
+        Child obj = new Child();
+        obj.display();  // Outputs: This is a final method.
+    }
+}
